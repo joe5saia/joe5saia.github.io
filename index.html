@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -64,7 +65,7 @@
 					</h3>
 					<p>
 						A simple Docker Container to scrape the BLS website with Python for macroeconomic data
-						release dates and make them useable.
+						release dates and make them into a useable CSV file that you can then pipe into whatever.
 					</p>
 				</div>
 				<div class="row">
@@ -73,63 +74,89 @@
 							MCMC</a>
 					</h3>
 					<p>
-						Julia Repository for estimating a three state hidden Markov chain model with Markov Chain Monte
-						Carlo methods.
+						BHMMMCM! Julia Repository for estimating a three state hidden Markov chain model with Markov
+						Chain Monte
+						Carlo methods. The goal was to estimate how the model "learns" as new data comes in each month,
+						which we
+						approximated by estimating the model on a rolling window of data spanning 50 years.
+						To best utilize the HPC clusters available to us, the project is set up to spawn several
+						houndred copies of the core estimation code and run in parallel over the rolling window. The
+						fancier
+						versions included an additional estimation step of treating the observations as noisey
+						observations
+						that need to be filtered.
 					</p>
 				</div>
 				<div class="row">
 					<h3><a href="images/thumbs/01.jpg" target="_blank">Fedplots</a></h3>
 					<p>
-						Rewrite of the Federal Reserve Board of Governors Splus plotting package into R, modernizing 
+						Rewrite of the Federal Reserve Board of Governors Splus plotting package into R, modernizing
 						the code base, increasing ease of use, performance and capabilities while maintaining visual
-						continuity, currently used by the majority of research assistants at the Board of Governors. 
-						The code is locked away, deep in the Federal Reserve's computer vaults, but output is 
+						continuity, currently used by the majority of research assistants at the Board of Governors.
+						The code is locked away, deep in the Federal Reserve's computer vaults, but output is
 						available at the link.
 					</p>
 				</div>
 			</div>
 
-	<ul class="actions">
-		<li><a href="https://github.com/joe5saia" class="button">More Projects</a></li>
-	</ul>
-	</section>
-
-	<section id="Teaching">
-		<h2>Teaching</h2>
-		<ul>
-			<li> Money & Banking: Fourth year undergraduate level </li>
-			<li> Intermediate Macroeconomics: First year undergraduate macroecomics </li>
-			<li> Macroeconomic Analysis I: First semester, master level macroecomics </li>
-		</ul>
-	</section>
-	<!-- Three -->
-	<section id="Contact">
-		<h2>Get In Touch</h2>
-		<p>You can reach me at the following locations</p>
-		<div class="col-4 col-12-small">
-			<ul class="labeled-icons">
-				<li>
-					<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-					1022 International Affairs Building <br />
-					Mail Code 3308 <br />
-					420 West 118th Street<br />
-					New York, NY 10027<br />
-					United States
-				</li>
-				<li>
-					<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-					518-530-8318
-				</li>
-				<li>
-					<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-					<a href="mailto:joe5saia@gmail.com">joe5saia@gmail.com</a>
-				</li>
+			<ul class="actions">
+				<li><a href="https://github.com/joe5saia" class="button">More Projects</a></li>
 			</ul>
-		</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- Four -->
+
+		<!-- Three -->
+
+		<section id="Teaching">
+			<h2>Teaching</h2>
+			<ul>
+				<li> Money & Banking: Fourth year undergraduate level </li>
+				<li> Intermediate Macroeconomics: First year undergraduate macroecomics </li>
+				<li> Macroeconomic Analysis I: First semester, master level macroecomics </li>
+			</ul>
+		</section>
+
+		<!-- Four -->
+		<section id="Skills">
+			<h2>Skills</h2>
+			<ul style="list-style: none;">
+					<li> <h3 class="fab fa-python"><span class="label"> Python</h3></li>
+					<li> <h3 class="fab fa-docker"><span class="label"> Docker</h3></li>
+					<li> <h3 class="fab fa-linux"><span class="label"> Linux</h3></li>
+					<li> <h3><span class="iconify" data-icon="logos-julia" data-inline="false"></span><span class="label"> Julia</h3></li>
+					<li> <h3 class="fab fa-r-project"><span class="label"> R</h3></li>
+					<li> <h3 class="fas fa-database"><span class="label"> SQL</h3></li>
+			</ul>
+		</section>
+
+
+		<!-- Five -->
+
+		<section id="Contact">
+			<h2>Get In Touch</h2>
+			<p>You can reach me at the following locations</p>
+			<div class="col-4 col-12-small">
+				<ul class="labeled-icons">
+					<li>
+						<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+						1022 International Affairs Building <br />
+						Mail Code 3308 <br />
+						420 West 118th Street<br />
+						New York, NY 10027<br />
+						United States
+					</li>
+					<li>
+						<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+						518-530-8318
+					</li>
+					<li>
+						<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+						<a href="mailto:joe5saia@gmail.com">joe5saia@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Four -->
 	<!--
 					<section id="four">
 						<h2>Elements</h2>
