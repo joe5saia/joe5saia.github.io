@@ -229,6 +229,10 @@ input, select, textarea {
 			overflow-x: auto;
 		}
 
+	.iconify[data-icon="logos-julia"] {
+		-moz-osx-font-smoothing:grayscale;
+		color: #787878;
+	}
 	.align-left {
 		text-align: left;
 	}
@@ -3219,3 +3223,4 @@ input, select, textarea {
 			}
 
 	}
+
