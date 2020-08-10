@@ -20,10 +20,8 @@
 	<header id="header">
 		<div class="inner">
 			<a href="#" class="image avatar"><img src="images/Saia_1.jpg" alt="" /></a>
-			<h1>I am <strong>Joe Saia</strong>, <br />
-				an Economics Ph.D. candidate at <br />
-				Columbia University in <br />
-				New York City.
+			<h1> <strong>Joe Saia</strong> <br />
+				Data Scientist
 			</h1>
 		</div>
 	</header>
@@ -36,128 +34,228 @@
 			<header class="major">
 				<h1>Joe Saia</h1>
 			</header>
-			<p> I am a 5th year Economics Ph.D. candidate at Columbia Universtiy whose reasearch interests are at the
-				intersection of emperical macroecomics, econometrics and machine learning.
+			<p> I am a data scientist who is finishing his Ph.D. in Economics at Columbia University. My research has
+				focused on combining machine learning techniques and Econometrical theory to uniquely analyze empirical
+				problems in monetary and macroeconomics at large. I am looking to apply my combination of research
+				experience
+				and coding abilities in a fast-paced data environment.
 
 			</p>
-			<ul class="actions">
-				<li><a href="#Contact" class="button">Contact Info</a></li>
-			</ul>
-		</section>
-
-		<!-- One -->
-		<section id="cv">
-			<header class="">
-				<h2>Curriculum Vitae</h2>
-			</header>
-			<ul class="actions">
-				<li><a href="images/thumbs/01.jpg" class="button" target="_blank">Open/Download</a></li>
-			</ul>
-		</section>
-
-		<!-- Two -->
-		<section id="Projects">
-			<h2>Projects</h2>
-			<div class="col">
-				<div class="row">
-					<h3>
-						<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies Data</a>
-					</h3>
-					<p>
-						A simple Docker Container to scrape the BLS website with Python for macroeconomic data
-						release dates and make them into a useable CSV file that you can then pipe into whatever.
-					</p>
+			<div class="row">
+				<div class="col">
+					<ul class="actions">
+						<li><a href="#Contact" class="button">Contact Info</a></li>
+					</ul>
 				</div>
-				<div class="row">
-					<h3>
-						<a href="https://github.com/joe5saia/hmc.jl" target="_blank">Bayesian Hidden Markov Model
-							MCMC</a>
-					</h3>
-					<p>
-						BHMMMCM! Julia Repository for estimating a three state hidden Markov chain model with Markov
-						Chain Monte
-						Carlo methods. The goal was to estimate how the model "learns" as new data comes in each month,
-						which we
-						approximated by estimating the model on a rolling window of data spanning 50 years.
-						To best utilize the HPC clusters available to us, the project is set up to spawn several
-						houndred copies of the core estimation code and run in parallel over the rolling window. The
-						fancier
-						versions included an additional estimation step of treating the observations as noisey
-						observations
-						that need to be filtered.
-					</p>
-				</div>
-				<div class="row">
-					<h3><a href="images/thumbs/01.jpg" target="_blank">Fedplots</a></h3>
-					<p>
-						Rewrite of the Federal Reserve Board of Governors Splus plotting package into R, modernizing
-						the code base, increasing ease of use, performance and capabilities while maintaining visual
-						continuity, currently used by the majority of research assistants at the Board of Governors.
-						The code is locked away, deep in the Federal Reserve's computer vaults, but output is
-						available at the link.
-					</p>
+				<div class="col">
+					<ul class="actions">
+						<li><a href="resume/joe_saia_website_cv.pdf" class="button" target="_blank">Resume</a></li>
+					</ul>
 				</div>
 			</div>
 
-			<ul class="actions">
-				<li><a href="https://github.com/joe5saia" class="button">More Projects</a></li>
-			</ul>
-		</section>
+
+			<!-- Two -->
+			<section id="Projects">
+				<h2>Projects</h2>
+				<div class="col">
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/PanelVariationalReccurentAutoEncoder"
+								target="_blank">Variational Recurrent Autoencoder for Compustat Data</a>
+						</h3>
+						<p>
+							Compustat is a widely used panel dataset in macroeconomics and corporate finance, but
+							contains a ton of missing observations. Traditionally,
+							researchers have thrown out large swaths of the available data because of these missing
+							observations. This project proposes using to model
+							the data generating process behind this data as a Variational Recurrent neural net,
+							estimated as an autoencoder. This autoencoder can then be
+							used to interpolate missing values in the wider dataset.
+						</p>
+					</div>
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/ML_soccer_analytics" target="_blank">Machine Learning
+								for Soccer Analytics</a>
+						</h3>
+						<p>
+							A side project to test out Flux.jl's handling of simple feed forward neural nets. The
+							research goal was to test
+							wether or not 538's Soccer Power Index is a sufficient statistic for predicting the outcome
+							of English Premier League matches
+						</p>
+						<p>
+							Answer: It's pretty darn close
+						</p>
+					</div>
+
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies
+								Data</a>
+						</h3>
+						<p>
+							A simple Docker Container to scrape the BLS website with Python for macroeconomic data
+							release dates and make them into a useable CSV file that you can then pipe into whatever.
+						</p>
+					</div>
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/hmc.jl" target="_blank">Bayesian Hidden Markov Model
+								with MCMC</a>
+						</h3>
+						<p>
+							BHMMMCM! Julia Repository for estimating a three state hidden Markov chain model with Markov
+							Chain Monte Carlo methods. The goal was to estimate how the model "learns" as new data comes
+							in each month, which we approximated by estimating the model on an expanding window of data
+							spanning 50 years. We then used the model as a "Rational" baseline to evaluate different
+							behavioral
+							biases in the literature for why consumer forecasts of inflation consistently overshoot
+							realized inflation,
+							especially in the short run.
+
+							To best utilize the HPC clusters available to us, the project is set up to spawn several
+							hounded copies of the core estimation code and run in parallel over the rolling window. The
+							fancier versions included an additional estimation step of treating the observations as
+							noisy observations that need to be filtered.
+						</p>
+					</div>
+
+					<div class="row">
+						<h3>Fedplots</h3>
+						<p>
+							Rewrite of the Federal Reserve Board of Governors Splus plotting package into R,
+							modernizing
+							the code base, increasing ease of use, performance and capabilities while maintaining visual
+							continuity, currently used by the majority of research assistants at the Board of Governors.
+							The code is locked away, deep in the Federal Reserve's computer vaults.
+						</p>
+					</div>
+				</div>
 
 
-		<!-- Three -->
 
-		<section id="Teaching">
-			<h2>Teaching</h2>
-			<ul>
-				<li> Money & Banking: Fourth year undergraduate level </li>
-				<li> Intermediate Macroeconomics: First year undergraduate macroecomics </li>
-				<li> Macroeconomic Analysis I: First semester, master level macroecomics </li>
-			</ul>
-		</section>
-
-		<!-- Four -->
-		<section id="Skills">
-			<h2>Skills</h2>
-			<ul style="list-style: none;">
-					<li> <h3 class="fab fa-python"><span class="label"> Python</h3></li>
-					<li> <h3 class="fab fa-docker"><span class="label"> Docker</h3></li>
-					<li> <h3 class="fab fa-linux"><span class="label"> Linux</h3></li>
-					<li> <h3><span class="iconify" data-icon="logos-julia" data-inline="false"></span><span class="label"> Julia</h3></li>
-					<li> <h3 class="fab fa-r-project"><span class="label"> R</h3></li>
-					<li> <h3 class="fas fa-database"><span class="label"> SQL</h3></li>
-			</ul>
-		</section>
+				<ul class="actions">
+					<li><a href="https://github.com/joe5saia" class="button">More Projects</a></li>
+				</ul>
+			</section>
 
 
-		<!-- Five -->
 
-		<section id="Contact">
-			<h2>Get In Touch</h2>
-			<p>You can reach me at the following locations</p>
-			<div class="col-4 col-12-small">
-				<ul class="labeled-icons">
-					<li>
-						<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-						1022 International Affairs Building <br />
-						Mail Code 3308 <br />
-						420 West 118th Street<br />
-						New York, NY 10027<br />
-						United States
+
+			<!-- Four -->
+			<section id="Skills">
+				<h2>Skills</h2>
+				<div class="row">
+					<div class="column"></div>
+					<ul style="list">
+						<li>
+							<h3> Python </h3>
+						</li>
+
+						<li>
+							<h3> Stata </h3>
+						</li>
+						<li>
+							<h3> Docker </h3>
+						</li>
+						<li>
+							<h3> Bash </h3>
+						</li>
+						<li>
+							<h3> Perl </h3>
+						</li>
+					</ul>
+					<div class="column"></div>
+					<ul style="list">
+						<li>
+							<h3> Julia </h3>
+						</li>
+						<li>
+							<h3> SAS </h3>
+						</li>
+						<li>
+							<h3> Linux </h3>
+						</li>
+						<li>
+							<h3> NumPy </h3>
+						</li>
+						<li>
+							<h3> Bayesian Statistical <br /> Modelling </h3>
+						</li>
+					</ul>
+					<div class="column"></div>
+					<ul style="list">
+						<li>
+							<h3> R </h3>
+						</li>
+						<li>
+							<h3> SQL </h3>
+						</li>
+						<li>
+							<h3> Data Visualization </h3>
+						</li>
+						<li>
+							<h3> Machine Learning <br /> Modelling </h3>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Three -->
+
+			<section id="Teaching">
+				<h2>Teaching</h2>
+				<ul>
+					<li> <span style="font-size:18px"><strong>Money & Banking: </strong> </span>
+						Fourth year undergraduate elective focusing on the unique role of the Federal Reserve in the
+						modern banking system
 					</li>
-					<li>
-						<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-						518-530-8318
+					<li> <span style="font-size:18px"><strong>Intermediate Macroeconomics: </strong> </span>
+						First year undergraduate core course which used simplified methods from modern theoretical
+						macroeconomics to study long-term growth, monetary and fiscal policy, and open-economies. I was
+						the Head TA, managing 5 TAs, during the Covid altered Spring 2020 semester and was in charge
+						of managing the transition to online learning
 					</li>
-					<li>
-						<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-						<a href="mailto:joe5saia@gmail.com">joe5saia@gmail.com</a>
+					<li> <span style="font-size:18px"><strong>Macroeconomic Analysis I: </strong> </span>
+						First semester, master's level macroeconomics which taught the development of modern theoretical
+						macroeconomics over the 20th century, while developing the technical toolkit needed for economic
+						research.
 					</li>
 				</ul>
-			</div>
-		</section>
-		<!-- Four -->
-	<!--
+			</section>
+
+			<!-- Five -->
+
+			<section id="Contact">
+				<h2>Get In Touch</h2>
+				<p>You can reach me at the following locations</p>
+				<div class="col-4 col-12-small">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+							542 West 112 St <br />
+							New York, NY 10025<br />
+							United States
+						</li>
+						<li>
+							<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+							(518) 530-8318
+						</li>
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto:joe5saia@gmail.com">joe5saia@gmail.com</a>
+						</li>
+						<li>
+							<h3 class="icon brands fa-github"><span class="label">Github</span></h3>
+							<a href="https://github.com/joe5saia" target="_blank">https://github.com/joe5saia</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Four -->
+			<!--
 					<section id="four">
 						<h2>Elements</h2>
 
