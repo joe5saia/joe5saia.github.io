@@ -19,11 +19,9 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/Saia_1.jpg" alt="" /></a>
-
-			<h1><strong>Joe Saia</strong><br/>
-				Data Scientist
-			</h1>
+			<a href="#" class="image avatar"><img src="images/Saia_1.jpg" alt=""/></a>
+			<h1><strong>Joe Saia</strong></h1> <br/>	
+			Data Scientist and Economics Ph.D. Candidate at Columbia University
 		</div>
 	</header>
 
@@ -35,12 +33,11 @@
 			<header class="major">
 				<h1>Joe Saia</h1>
 			</header>
-			<p> I am a data scientist who is finishing his Ph.D. in Economics at Columbia University. My research has
-				focused on combining machine learning techniques and Econometrical theory to uniquely analyze empirical
-				problems in monetary and macroeconomics at large. I am looking to apply my combination of research
-				experience
-				and coding abilities in a fast-paced data environment.
-
+			<p> 
+				I am a data scientist who is finishing his Ph.D. in Economics at Columbia University. My work has
+				focused on combining machine learning techniques and econometrical theory to uniquely analyze empirical
+				problems in monetary and macroeconomics with cross sectional observational data in 
+				high-dimensional data settings. 
 			</p>
 			<div class="row">
 				<div class="col">
@@ -50,7 +47,7 @@
 				</div>
 				<div class="col">
 					<ul class="actions">
-						<li><a href="resume/joe_saia_website_cv.pdf" class="button" target="_blank">Resume</a></li>
+						<li><a href="resume/joe_saia_resume.pdf" class="button" target="_blank">Resume</a></li>
 					</ul>
 				</div>
 			</div>
@@ -62,43 +59,16 @@
 				<div class="col">
 					<div class="row">
 						<h3>
-							<a href="https://github.com/joe5saia/PanelVariationalReccurentAutoEncoder"
-								target="_blank">Variational Recurrent Autoencoder for Compustat Data</a>
+							<a href="https://github.com/joe5saia/double_debias"
+								target="_blank">Double/Debias Machine Learning</a>
 						</h3>
 						<p>
-							Compustat is a widely used panel dataset in macroeconomics and corporate finance, but
-							contains a ton of missing observations. Traditionally,
-							researchers have thrown out large swaths of the available data because of these missing
-							observations. This project models
-							the data generating process behind this data as a variational recurrent neural net,
-							estimated as an autoencoder. This autoencoder can then be
-							used to interpolate missing values in the wider dataset.
-						</p>
-					</div>
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/ML_soccer_analytics" target="_blank">Machine Learning
-								for Soccer Analytics</a>
-						</h3>
-						<p>
-							A side project to test out Flux.jl's handling of simple feed forward neural nets. The
-							research goal was to test
-							wether or not 538's Soccer Power Index is a sufficient statistic for predicting the outcome
-							of English Premier League matches
-						</p>
-						<p>
-							Answer: It's pretty darn close
-						</p>
-					</div>
-
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies
-								Data</a>
-						</h3>
-						<p>
-							A simple Docker Container to scrape the BLS website with Python for macroeconomic data
-							release dates and make them into a useable CSV file that you can then pipe into whatever.
+							This is a python package that implements the double debiased estimator class from 
+							<a href="https://economics.mit.edu/files/12538"
+							target="_blank">Double/Debiased Machine Learning for Treatment and Structural Parameters</a>
+							by Chernozhukov et. al. on top of the scikit-learn library. It lets the user specify any model 
+							implemented in the scikit-learn library to model the treatment and dependent variables as a function 
+							of some high-dimensional data.
 						</p>
 					</div>
 					<div class="row">
@@ -122,6 +92,43 @@
 							noisy observations that need to be filtered.
 						</p>
 					</div>
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/LocalProjections.jl"
+								target="_blank">Local Projections Forecast</a>
+						</h3>
+						<p>
+							This is a Julia package that estimates Jorda local projections models which have 
+							become a work horse model in empirical macroeconomics. The results are stored in the 
+							LocalProjections class.
+						</p>
+					</div>
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/PanelVariationalReccurentAutoEncoder"
+								target="_blank">Variational Recurrent Autoencoder for Compustat Data</a>
+						</h3>
+						<p>
+							Compustat is a widely used panel dataset in macroeconomics and corporate finance, but
+							contains a ton of missing observations. Traditionally,
+							researchers have thrown out large swaths of the available data because of these missing
+							observations. This project models
+							the data generating process behind this data as a variational recurrent neural net,
+							estimated as an autoencoder. This autoencoder can then be
+							used to interpolate missing values in the wider dataset.
+						</p>
+					</div>
+					<div class="row">
+						<h3>
+							<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies
+								Data</a>
+						</h3>
+						<p>
+							A simple Docker Container to scrape the BLS website with Python for macroeconomic data
+							release dates and make them into a useable CSV file that you can then pipe into whatever.
+						</p>
+					</div>
+
 
 					<div class="row">
 						<h3>Fedplots</h3>
@@ -138,7 +145,7 @@
 
 
 				<ul class="actions">
-					<li><a href="https://github.com/joe5saia" class="button">More Projects</a></li>
+					<li><a href="https://github.com/joe5saia" class="button">More Projects at GitHub</a></li>
 				</ul>
 			</section>
 
@@ -156,7 +163,7 @@
 						</li>
 
 						<li>
-							<h3> Stata </h3>
+							<h3> SQL </h3>
 						</li>
 						<li>
 							<h3> Docker </h3>
@@ -192,7 +199,7 @@
 							<h3> R </h3>
 						</li>
 						<li>
-							<h3> SQL </h3>
+							<h3> Stata </h3>
 						</li>
 						<li>
 							<h3> Data Visualization </h3>
@@ -235,7 +242,6 @@
 					<ul class="labeled-icons">
 						<li>
 							<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-							542 West 112 St <br />
 							New York, NY 10025<br />
 							United States
 						</li>
