@@ -19,8 +19,8 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/Saia_1.jpg" alt=""/></a>
-			<h1><strong>Joe Saia</strong></h1> <br/>	
+			<a href="#" class="image avatar"><img src="images/Saia_1.jpg" alt="" /></a>
+			<h1><strong>Joe Saia</strong></h1> <br />
 			Data Scientist and Economics Ph.D. Candidate at Columbia University
 		</div>
 	</header>
@@ -33,11 +33,11 @@
 			<header class="major">
 				<h1>Joe Saia</h1>
 			</header>
-			<p> 
+			<p>
 				I am a data scientist who is finishing his Ph.D. in Economics at Columbia University. My work has
 				focused on combining machine learning techniques and econometrical theory to uniquely analyze empirical
-				problems in monetary and macroeconomics with cross sectional observational data in 
-				high-dimensional data settings. 
+				problems in monetary and macroeconomics with cross sectional observational data in
+				high-dimensional data settings.
 			</p>
 			<div class="row">
 				<div class="col">
@@ -59,94 +59,113 @@
 				<div class="col">
 					<div class="row">
 						<h3>
-							<a href="https://github.com/joe5saia/double_debias"
-								target="_blank">Double/Debias Machine Learning</a>
+							<a href="https://github.com/joe5saia/double_debias" target="_blank">Double/Debias Machine Learning</a>
 						</h3>
 						<p>
-							This is a python package that implements the double debiased estimator class from 
-							<a href="https://economics.mit.edu/files/12538"
-							target="_blank">Double/Debiased Machine Learning for Treatment and Structural Parameters</a>
-							by Chernozhukov et. al. on top of the scikit-learn library. It lets the user specify any model 
-							implemented in the scikit-learn library to model the treatment and dependent variables as a function 
+							This is a python package that implements the double debiased estimator class from
+							<a href="https://economics.mit.edu/files/12538" target="_blank">Double/Debiased Machine Learning for
+								Treatment and Structural Parameters</a>
+							by Chernozhukov et. al. on top of the scikit-learn library. It lets the user specify any model
+							implemented in the scikit-learn library to model the treatment and dependent variables as a function
 							of some high-dimensional data.
 						</p>
 					</div>
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/hmc.jl" target="_blank">Bayesian Hidden Markov Model
-								with MCMC</a>
-						</h3>
-						<p>
-							BHMMMCM! Julia Repository for estimating a three state hidden Markov chain model with Markov
-							Chain Monte Carlo methods. The goal was to estimate how the model "learns" as new data comes
-							in each month, which we approximated by estimating the model on an expanding window of data
-							spanning 50 years. We then used the model as a "Rational" baseline to evaluate different
-							behavioral
-							biases in the literature for why consumer forecasts of inflation consistently overshoot
-							realized inflation,
-							especially in the short run.
 
-							To best utilize the HPC clusters available to us, the project is set up to spawn several
-							hounded copies of the core estimation code and run in parallel over the rolling window. The
-							fancier versions included an additional estimation step of treating the observations as
-							noisy observations that need to be filtered.
-						</p>
+					<div class="col">
+						<div class="row">
+							<h3>
+								<a href="https://github.com/joe5saia/FredMD" target="_blank">FredMD</a>
+							</h3>
+							<p>
+								This is a package to download the <a
+									href="https://research.stlouisfed.org/econ/mccracken/fred-databases/" target="_blank"> Fred-MD </a>
+								dataset and estimate latent factors off it. The FRED-MD dataset contains about
+								150 commonly used monthly macroeconomic series. McCracken and Ng suggest that 8 factors describes the
+								vast
+								majority of the common variation in these series, allowing researchers to control for most of the
+								aggregate
+								flucutations in the U.S. economy with a succient number of variables. This package also implements an
+								information
+								critea method suggested by Bai and Ng to select the optimal number of factors if researchers want to use
+								different time period to estimate the factors.
+							</p>
+						</div>
+
+						<div class="row">
+							<h3>
+								<a href="https://github.com/joe5saia/hmc.jl" target="_blank">Bayesian Hidden Markov Model
+									with MCMC</a>
+							</h3>
+							<p>
+								BHMMMCM! Julia Repository for estimating a three state hidden Markov chain model with Markov
+								Chain Monte Carlo methods. The goal was to estimate how the model "learns" as new data comes
+								in each month, which we approximated by estimating the model on an expanding window of data
+								spanning 50 years. We then used the model as a "Rational" baseline to evaluate different
+								behavioral
+								biases in the literature for why consumer forecasts of inflation consistently overshoot
+								realized inflation,
+								especially in the short run.
+
+								To best utilize the HPC clusters available to us, the project is set up to spawn several
+								hounded copies of the core estimation code and run in parallel over the rolling window. The
+								fancier versions included an additional estimation step of treating the observations as
+								noisy observations that need to be filtered.
+							</p>
+						</div>
+						<div class="row">
+							<h3>
+								<a href="https://github.com/joe5saia/LocalProjections.jl" target="_blank">Local Projections Forecast</a>
+							</h3>
+							<p>
+								This is a Julia package that estimates Jorda local projections models which have
+								become a work horse model in empirical macroeconomics. The results are stored in the
+								LocalProjections class.
+							</p>
+						</div>
+						<div class="row">
+							<h3>
+								<a href="https://github.com/joe5saia/PanelVariationalReccurentAutoEncoder" target="_blank">Variational
+									Recurrent Autoencoder for Compustat Data</a>
+							</h3>
+							<p>
+								Compustat is a widely used panel dataset in macroeconomics and corporate finance, but
+								contains a ton of missing observations. Traditionally,
+								researchers have thrown out large swaths of the available data because of these missing
+								observations. This project models
+								the data generating process behind this data as a variational recurrent neural net,
+								estimated as an autoencoder. This autoencoder can then be
+								used to interpolate missing values in the wider dataset.
+							</p>
+						</div>
+						<div class="row">
+							<h3>
+								<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies
+									Data</a>
+							</h3>
+							<p>
+								A simple Docker Container to scrape the BLS website with Python for macroeconomic data
+								release dates and make them into a useable CSV file that you can then pipe into whatever.
+							</p>
+						</div>
+
+
+						<div class="row">
+							<h3>Fedplots</h3>
+							<p>
+								Rewrite of the Federal Reserve Board of Governors Splus plotting package into R,
+								modernizing
+								the code base, increasing ease of use, performance and capabilities while maintaining visual
+								continuity, currently used by the majority of research assistants at the Board of Governors.
+								The code is locked away, deep in the Federal Reserve's computer vaults.
+							</p>
+						</div>
 					</div>
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/LocalProjections.jl"
-								target="_blank">Local Projections Forecast</a>
-						</h3>
-						<p>
-							This is a Julia package that estimates Jorda local projections models which have 
-							become a work horse model in empirical macroeconomics. The results are stored in the 
-							LocalProjections class.
-						</p>
-					</div>
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/PanelVariationalReccurentAutoEncoder"
-								target="_blank">Variational Recurrent Autoencoder for Compustat Data</a>
-						</h3>
-						<p>
-							Compustat is a widely used panel dataset in macroeconomics and corporate finance, but
-							contains a ton of missing observations. Traditionally,
-							researchers have thrown out large swaths of the available data because of these missing
-							observations. This project models
-							the data generating process behind this data as a variational recurrent neural net,
-							estimated as an autoencoder. This autoencoder can then be
-							used to interpolate missing values in the wider dataset.
-						</p>
-					</div>
-					<div class="row">
-						<h3>
-							<a href="https://github.com/joe5saia/eventstudiesdata" target="_blank">Event Studies
-								Data</a>
-						</h3>
-						<p>
-							A simple Docker Container to scrape the BLS website with Python for macroeconomic data
-							release dates and make them into a useable CSV file that you can then pipe into whatever.
-						</p>
-					</div>
-
-
-					<div class="row">
-						<h3>Fedplots</h3>
-						<p>
-							Rewrite of the Federal Reserve Board of Governors Splus plotting package into R,
-							modernizing
-							the code base, increasing ease of use, performance and capabilities while maintaining visual
-							continuity, currently used by the majority of research assistants at the Board of Governors.
-							The code is locked away, deep in the Federal Reserve's computer vaults.
-						</p>
-					</div>
-				</div>
 
 
 
-				<ul class="actions">
-					<li><a href="https://github.com/joe5saia" class="button">More Projects at GitHub</a></li>
-				</ul>
+					<ul class="actions">
+						<li><a href="https://github.com/joe5saia" class="button">More Projects at GitHub</a></li>
+					</ul>
 			</section>
 
 
@@ -216,18 +235,21 @@
 			<section id="Teaching">
 				<h2>Teaching</h2>
 				<ul>
-					<li style=" margin-bottom: 25px;"> <h4 style=" margin-bottom: 0px;">Money & Banking: </h4> 
+					<li style=" margin-bottom: 25px;">
+						<h4 style=" margin-bottom: 0px;">Money & Banking: </h4>
 						Fourth year undergraduate elective focusing on the unique role of the Federal Reserve in the
 						modern banking system
 					</li>
-					<li style=" margin-bottom: 25px;"> <h4 style=" margin-bottom: 0px;">Intermediate Macroeconomics: </h4>
+					<li style=" margin-bottom: 25px;">
+						<h4 style=" margin-bottom: 0px;">Intermediate Macroeconomics: </h4>
 						First year undergraduate core course which used simplified methods from modern theoretical
 						macroeconomics to study long-term growth, monetary and fiscal policy, and open-economies. I was
-						the Head TA, managing 5 TAs, during the Covid altered Spring 2020 semester and was in charge 
+						the Head TA, managing 5 TAs, during the Covid altered Spring 2020 semester and was in charge
 						of managing the transition to online learning
 					</li>
-					<li> <h4 style=" margin-bottom: 0px;">Macroeconomic Analysis I: </h4>
-						First semester, master's level macroeconomics which taught the development of modern theoretical 
+					<li>
+						<h4 style=" margin-bottom: 0px;">Macroeconomic Analysis I: </h4>
+						First semester, master's level macroeconomics which taught the development of modern theoretical
 						macroeconomics over the 20th century, while developing the technical toolkit needed for economic research.
 					</li>
 				</ul>
@@ -260,7 +282,7 @@
 						<li>
 							<h3><i class="fab fa-linkedin-in"></i><span class="label"></span></h3>
 							<a href="https://www.linkedin.com/in/joe-saia/" target="_blank">https://www.linkedin.com/in/joe-saia/</a>
-							
+
 						</li>
 					</ul>
 				</div>
@@ -589,10 +611,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
-				<li><a href="https://github.com/joe5saia" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="mailto:joe5saia@gmail.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
+				<li><a href="https://github.com/joe5saia" class="icon brands fa-github"><span class="label">Github</span></a>
+				</li>
+				<li><a href="mailto:joe5saia@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
